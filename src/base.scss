@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+$default-color: #ff8451;
+
 * {
   font-family: 'Nanum Gothic', sans-serif;
 }
@@ -7,3 +11,28 @@
 body {
   background-color: #fdeee7;
 }
+
+.straview {
+  button {
+    background-color: #da5428;
+    border-color: #c2c2c2;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  button:hover {
+    background-color: #bb360b;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+

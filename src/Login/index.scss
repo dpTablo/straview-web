@@ -7,22 +7,17 @@
   margin-bottom: 15vh;
   height: $height;
   padding: 0.5em;
-  color: #f8530b;
 
   .headerRow {
-    height: $height * 0.2;
+    height: $height * 0.15;
+    h1 { font-weight: bold; }
   }
 
   .formRow {
-    height: $height * 0.7;
+    height: $height * 0.75;
 
     .loginForm {
       border-radius: 2%;
-    }
-
-    .loginButton {
-      background-color: #da5428;
-      border-color: #c2c2c2;
     }
   }
 

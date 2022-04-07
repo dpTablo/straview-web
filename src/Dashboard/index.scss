@@ -1,0 +1,31 @@
+@use '../base';
+
+.dashboard {
+  height: 100vh;
+
+  .navbar {
+    background-color: #ff8451 !important;
+  }
+
+  .nav-link {
+    font-weight: bold;
+
+    img {
+      height: 1em;
+      margin-right: 0.5em;
+      opacity: 0.5;
+    }
+
+    &.active {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  .logoutButton {
+    background-color: #fac4b0;
+    border-color: gray;
+    color: #575757;
+  }
+}
