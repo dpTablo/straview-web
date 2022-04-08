@@ -6,7 +6,7 @@ import './index.scss'
 class Login extends Component {
     onClickLoginButton() {
         console.log('onClickLoginButton')
-        document.location.href = './dashboard'
+        document.location.href = './dashboard/status'
     }
 
     render() {

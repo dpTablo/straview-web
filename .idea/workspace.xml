@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41aa5ce3-ca00-4074-bd75-3d23109fa43f" name="Changes" comment="login 컴포넌트 초안 구현">
+    <list default="true" id="41aa5ce3-ca00-4074-bd75-3d23109fa43f" name="Changes" comment="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dashboard/week-training" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -61,16 +59,20 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/dashboard/week-training" />
+      <recent name="$PROJECT_DIR$/src/dashboard/riding-statistics" />
+      <recent name="$PROJECT_DIR$/src/dashboard" />
+      <recent name="$PROJECT_DIR$/src/Dashboard/training-statistics" />
+      <recent name="$PROJECT_DIR$/src/Dashboard/Status" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/common" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript 디버그.react - localhost:3000">
     <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -84,6 +86,13 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="react - localhost:3000" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript 디버그.react - localhost:3000" />
+      <item itemvalue="Jest.renders learn react link" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Jest.renders learn react link" />
@@ -100,7 +109,7 @@
       <updated>1648448433857</updated>
       <workItem from="1648448437949" duration="24433000" />
       <workItem from="1649289504284" duration="14000" />
-      <workItem from="1649289528965" duration="20402000" />
+      <workItem from="1649289528965" duration="34451000" />
     </task>
     <task id="LOCAL-00001" summary="node_modules 경로 추가&#10;build 경로 추가">
       <created>1649252423414</created>
@@ -116,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649252587153</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가">
+      <created>1649322361062</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649322361062</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +152,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="node_modules 경로 추가&#10;build 경로 추가" />
     <MESSAGE value="login 컴포넌트 초안 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="login 컴포넌트 초안 구현" />
+    <MESSAGE value="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/nav/StraviewNavBar.jsx</url>
+          <line>22</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
