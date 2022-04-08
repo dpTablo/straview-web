@@ -15,7 +15,8 @@ class StraviewNavBar extends Component {
         super(props)
 
         this.state = {
-            visible: false
+            visible: false,
+
         }
     }
 
@@ -49,18 +50,24 @@ class StraviewNavBar extends Component {
                                     액티비티
                                 </Nav.Link>
                             </LinkContainer>
-                            <Nav.Link href="/dashboard/week-training">
-                                <img src={sevenDaysImg} alt="이번 주 훈련관리" />
-                                이번 주 훈련관리
-                            </Nav.Link>
-                            <Nav.Link href="/dashboard/training-statistics" >
-                                <img src={clipboardImg} alt="훈련 통계"/>
-                                훈련 통계
-                            </Nav.Link>
-                            <Nav.Link href="/dashboard/riding-statistics" >
-                                <img src={bikeImg} alt="라이딩 통계"/>
-                                라이딩 통계
-                            </Nav.Link>
+                            <LinkContainer to="/dashboard/week-training">
+                                <Nav.Link>
+                                    <img src={sevenDaysImg} alt="이번 주 훈련관리" />
+                                    이번 주 훈련관리
+                                </Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/dashboard/training-statistics">
+                                <Nav.Link>
+                                    <img src={clipboardImg} alt="훈련 통계"/>
+                                    훈련 통계
+                                </Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer to="/dashboard/training-statistics">
+                                <Nav.Link href="/dashboard/riding-statistics" >
+                                    <img src={bikeImg} alt="라이딩 통계"/>
+                                    라이딩 통계
+                                </Nav.Link>
+                            </LinkContainer>
                             <LinkContainer to="/dashboard/status" >
                                 <Nav.Link>
                                     <img src={userImg} alt="나의 상태"/>
