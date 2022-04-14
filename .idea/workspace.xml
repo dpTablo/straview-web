@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41aa5ce3-ca00-4074-bd75-3d23109fa43f" name="Changes" comment="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가">
+    <list default="true" id="41aa5ce3-ca00-4074-bd75-3d23109fa43f" name="Changes" comment="Login 페이지 &#10;- ui, css 구현&#10;- 로그인 api 처리 구현&#10;- 인증이 되어 있는 경우 대시보드 상태 페이지로 이동 처리&#10;&#10;MainLayout &#10;- 공통 NavBar 적용&#10;- 인증 만료 시 로그인 페이지 이동 처리&#10;&#10;리팩토링&#10;- 패지키 디렉토리 변경">
+      <change afterPath="$PROJECT_DIR$/src/layout/StraviewNavBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/login/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboard/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dashboard/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dashboard/activities/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/activities/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dashboard/riding-statistics/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/riding-statistics/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dashboard/status/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/status/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dashboard/training-statistics/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/training-statistics/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dashboard/week-training/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/dashboard/week-training/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/login/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav/StraviewNavBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/nav/StraviewNavBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/StraviewNavBar.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +80,33 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript 디버그.react - localhost:3000">
+    <configuration name="&lt;Login /&gt;.click test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/login/index.test.tsx" />
+      <test-names>
+        <test-name value="&lt;Login /&gt;" />
+        <test-name value="click test" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="on click loginButton" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/login/index.test.tsx" />
+      <test-names>
+        <test-name value="on click loginButton" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -86,15 +120,33 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="test case1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/login/index.test.tsx" />
+      <test-names>
+        <test-name value="test case1" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="react - localhost:3000" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JavaScript 디버그.react - localhost:3000" />
+      <item itemvalue="Jest.on click loginButton" />
+      <item itemvalue="Jest.&lt;Login /&gt;.click test" />
+      <item itemvalue="Jest.test case1" />
       <item itemvalue="Jest.renders learn react link" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.&lt;Login /&gt;.click test" />
+        <item itemvalue="Jest.test case1" />
         <item itemvalue="Jest.renders learn react link" />
       </list>
     </recent_temporary>
@@ -109,7 +161,8 @@
       <updated>1648448433857</updated>
       <workItem from="1648448437949" duration="24433000" />
       <workItem from="1649289504284" duration="14000" />
-      <workItem from="1649289528965" duration="34451000" />
+      <workItem from="1649289528965" duration="41014000" />
+      <workItem from="1649401073443" duration="48762000" />
     </task>
     <task id="LOCAL-00001" summary="node_modules 경로 추가&#10;build 경로 추가">
       <created>1649252423414</created>
@@ -132,7 +185,49 @@
       <option name="project" value="LOCAL" />
       <updated>1649322361062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="대시보드 페이지 &#10;-대시보드 하위 페이지 라우팅&#10;&#10;공용 NavBar 코드 정리">
+      <created>1649392737362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649392737362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="대시보드 페이지 &#10;-대시보드 하위 페이지 라우팅&#10;&#10;공용 NavBar 코드 정리">
+      <created>1649392757923</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649392757923</updated>
+    </task>
+    <task id="LOCAL-00006" summary="StraviewNavBar&#10;-LinkContainer 누락 부분 수정">
+      <created>1649393182477</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649393182477</updated>
+    </task>
+    <task id="LOCAL-00007" summary="의존 라이브러리 추가">
+      <created>1649949365080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649949365080</updated>
+    </task>
+    <task id="LOCAL-00008" summary="API 유틸리티 클래스 구현&#10;- 상수 관리&#10;- url 생성 &#10;- 헤더 생성">
+      <created>1649949497673</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649949497673</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Axios 유틸리티 클래스 구현&#10;- 토큰 정보 관리 (localStorage, axios default header)">
+      <created>1649949545287</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649949545287</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,16 +248,21 @@
     <MESSAGE value="node_modules 경로 추가&#10;build 경로 추가" />
     <MESSAGE value="login 컴포넌트 초안 구현" />
     <MESSAGE value="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 페이지, 대시보드 페이지 &#10;-태그요소 변경&#10;-스타일 수정&#10;-아이콘 이미지 추가" />
+    <MESSAGE value="대시보드 페이지 &#10;-대시보드 하위 페이지 라우팅&#10;&#10;공용 NavBar 코드 정리" />
+    <MESSAGE value="StraviewNavBar&#10;-LinkContainer 누락 부분 수정" />
+    <MESSAGE value="의존 라이브러리 추가" />
+    <MESSAGE value="API 유틸리티 클래스 구현&#10;- 상수 관리&#10;- url 생성 &#10;- 헤더 생성" />
+    <MESSAGE value="Axios 유틸리티 클래스 구현&#10;- 토큰 정보 관리 (localStorage, axios default header)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Axios 유틸리티 클래스 구현&#10;- 토큰 정보 관리 (localStorage, axios default header)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/nav/StraviewNavBar.jsx</url>
-          <line>22</line>
+          <url>file://$PROJECT_DIR$/src/layout/MainLayout.tsx</url>
+          <line>12</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

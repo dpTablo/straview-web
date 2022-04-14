@@ -1,11 +1,14 @@
 import {Component } from "react";
+import MainLayout from "../../layout/MainLayout";
 
 class RidingStatistics extends Component {
     render() {
         return (
-            <section>
-                라이딩 통계
-            </section>
+            <MainLayout>
+                <section>
+                    라이딩 통계
+                </section>
+            </MainLayout>
         )
     }
 }
